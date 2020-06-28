@@ -1,0 +1,11 @@
+
+inputData = "../data/pima/pima-10-1tra.dat" "../data/pima/pima-10-1tra.dat" "../data/pima/pima-10-1tst.dat"
+inputData = "../data/glass/glass-10-1tra.dat" "../data/glass/glass-10-1tra.dat" "../data/glass/glass-10-1tst.dat"
+
+inputData = "../data/iris/iris-5-1tra.dat" "../data/iris/iris-5-1tra.dat" "../data/iris/iris-5-1tst.dat"
+
+inputData = "../data/cleveland/cleveland-5-1tra.dat" "../data/cleveland/cleveland-5-1tra.dat" "../data/cleveland/cleveland-5-1tst.dat"
+inputData = "../data/abalone/abalone-5-1tra.dat" "../data/abalone/abalone-5-1tra.dat" "../data/abalone/abalone-5-1tst.dat"
+inputData = "../data/ecoli/ecoli-5-4tra.dat" "../data/ecoli/ecoli-5-4tra.dat" "../data/ecoli/ecoli-5-4tst.dat"
+inputData = "../data/dermatology/dermatology-5-4tra.dat" "../data/dermatology/dermatology-5-4tra.dat" "../data/dermatology/dermatology-5-4tst.dat"
+inputData = "../data/autos/autos-5-1tra.dat" "../data/autos/autos-5-1tra.dat" "../data/autos/autos-5-1tst.dat"
