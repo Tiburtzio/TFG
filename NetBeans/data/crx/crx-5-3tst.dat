@@ -1,0 +1,151 @@
+@relation unknow
+@attribute a1 {b, a}
+@attribute a2 real [16.0, 8025.0]
+@attribute a3 real [0.0, 26335.0]
+@attribute a4 {u, y, l}
+@attribute a5 {g, p, gg}
+@attribute a6 {w, q, m, r, cc, k, c, d, x, i, e, aa, ff, j}
+@attribute a7 {v, h, bb, ff, j, z, o, dd, n}
+@attribute a8 real [0.0, 14415.0]
+@attribute a9 {t, f}
+@attribute a10 {t, f}
+@attribute a11 real [0.0, 67.0]
+@attribute a12 {f, t}
+@attribute a13 {g, s, p}
+@attribute a14 real [0.0, 2000.0]
+@attribute a15 real [0.0, 100000.0]
+@attribute class {positive, negative}
+@inputs a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15
+@outputs class
+@data
+a, 245.0, 5.0, u, g, q, h, 15.0, t, f, 0.0, f, g, 280.0, 824.0, positive
+b, 2208.0, 83.0, u, g, c, h, 2165.0, f, f, 0.0, t, g, 128.0, 0.0, positive
+b, 3667.0, 4415.0, y, p, k, v, 25.0, t, t, 10.0, t, g, 320.0, 0.0, positive
+a, 2325.0, 5875.0, u, g, q, v, 317.0, t, t, 10.0, f, g, 120.0, 245.0, positive
+a, 1917.0, 8585.0, u, g, cc, h, 75.0, t, t, 7.0, f, g, 96.0, 0.0, positive
+b, 25.0, 1125.0, u, g, c, v, 25.0, t, t, 17.0, f, g, 200.0, 1208.0, positive
+a, 4117.0, 65.0, u, g, q, v, 5.0, t, t, 3.0, t, g, 145.0, 0.0, positive
+a, 47.0, 13.0, u, g, i, bb, 5165.0, t, t, 9.0, t, g, 0.0, 0.0, positive
+b, 2925.0, 1479.0, u, g, aa, v, 504.0, t, t, 5.0, t, g, 168.0, 0.0, positive
+b, 2775.0, 585.0, y, p, cc, v, 25.0, t, t, 2.0, f, g, 260.0, 500.0, positive
+b, 3958.0, 13915.0, u, g, w, v, 8625.0, t, t, 6.0, t, g, 70.0, 0.0, positive
+b, 2392.0, 665.0, u, g, c, v, 165.0, f, f, 0.0, f, g, 100.0, 0.0, positive
+b, 3742.0, 204.0, u, g, w, v, 4.0, t, f, 0.0, t, g, 400.0, 5800.0, positive
+b, 2333.0, 11625.0, y, p, w, v, 835.0, t, f, 0.0, t, g, 160.0, 300.0, positive
+b, 4325.0, 3.0, u, g, q, h, 6.0, t, t, 11.0, f, g, 80.0, 0.0, positive
+b, 3167.0, 16165.0, u, g, d, v, 3.0, t, t, 9.0, f, g, 250.0, 730.0, positive
+a, 2342.0, 79.0, y, p, q, v, 15.0, t, t, 2.0, t, g, 80.0, 400.0, positive
+b, 4425.0, 5.0, u, g, m, v, 1075.0, t, f, 0.0, f, s, 400.0, 0.0, negative
+b, 4483.0, 7.0, y, p, c, v, 1625.0, f, f, 0.0, f, g, 160.0, 2.0, negative
+b, 2725.0, 625.0, u, g, aa, v, 455.0, t, f, 0.0, t, g, 200.0, 0.0, negative
+b, 2567.0, 221.0, y, p, aa, v, 4.0, t, f, 0.0, f, g, 188.0, 0.0, negative
+a, 49.0, 15.0, u, g, j, j, 0.0, t, f, 0.0, t, g, 100.0, 27.0, negative
+b, 5233.0, 1375.0, y, p, c, h, 946.0, t, f, 0.0, t, g, 200.0, 100.0, negative
+a, 285.0, 1.0, u, g, q, v, 1.0, t, t, 2.0, t, g, 167.0, 500.0, negative
+b, 2783.0, 4.0, y, p, i, h, 575.0, t, t, 2.0, t, g, 75.0, 0.0, negative
+b, 2875.0, 1165.0, u, g, k, v, 5.0, t, f, 0.0, f, s, 280.0, 0.0, negative
+a, 3375.0, 75.0, u, g, k, bb, 1.0, t, t, 3.0, t, g, 212.0, 0.0, negative
+b, 2567.0, 125.0, u, g, cc, v, 121.0, t, t, 67.0, t, g, 140.0, 258.0, positive
+b, 3442.0, 425.0, u, g, i, bb, 325.0, t, t, 2.0, f, g, 274.0, 610.0, positive
+a, 565.0, 16.0, u, g, j, ff, 0.0, t, t, 15.0, f, g, 0.0, 247.0, positive
+b, 43.0, 29.0, y, p, cc, h, 175.0, t, t, 8.0, f, g, 100.0, 375.0, positive
+a, 4033.0, 754.0, y, p, q, h, 8.0, t, t, 14.0, f, g, 0.0, 2300.0, positive
+a, 5283.0, 15.0, u, g, c, v, 55.0, t, t, 14.0, f, g, 0.0, 2200.0, positive
+a, 2167.0, 115.0, y, p, j, j, 0.0, t, t, 11.0, t, g, 0.0, 0.0, positive
+b, 2767.0, 2.0, u, g, x, h, 1.0, t, t, 4.0, f, g, 140.0, 7544.0, positive
+b, 1933.0, 95.0, u, g, q, v, 1.0, t, f, 0.0, t, g, 60.0, 400.0, positive
+b, 25.0, 125.0, u, g, aa, v, 3.0, t, f, 0.0, t, s, 20.0, 0.0, positive
+a, 1842.0, 925.0, u, g, q, v, 121.0, t, t, 4.0, f, g, 60.0, 540.0, positive
+b, 4058.0, 5.0, u, g, c, v, 5.0, t, t, 7.0, f, g, 0.0, 3065.0, positive
+b, 2758.0, 204.0, y, p, aa, v, 2.0, t, t, 3.0, t, g, 370.0, 560.0, positive
+b, 3633.0, 2125.0, y, p, w, v, 85.0, t, t, 1.0, f, g, 50.0, 1187.0, positive
+b, 3517.0, 25.0, u, g, k, v, 45.0, t, t, 7.0, f, g, 150.0, 1270.0, positive
+b, 395.0, 425.0, u, g, c, bb, 65.0, t, t, 16.0, f, g, 117.0, 1210.0, positive
+b, 6008.0, 145.0, u, g, ff, ff, 18.0, t, t, 15.0, t, g, 0.0, 1000.0, positive
+b, 4817.0, 35.0, u, g, aa, v, 35.0, t, f, 0.0, f, s, 230.0, 0.0, positive
+b, 2208.0, 11.0, u, g, cc, v, 665.0, t, f, 0.0, f, g, 100.0, 0.0, positive
+a, 5842.0, 21.0, u, g, i, bb, 10.0, t, t, 13.0, f, g, 0.0, 6700.0, positive
+a, 2067.0, 1835.0, u, g, q, v, 2085.0, t, t, 5.0, f, g, 220.0, 2503.0, positive
+b, 4283.0, 4625.0, u, g, q, v, 458.0, t, f, 0.0, f, s, 0.0, 0.0, positive
+b, 3317.0, 304.0, y, p, c, h, 204.0, t, t, 1.0, t, g, 180.0, 18027.0, positive
+a, 1967.0, 21.0, u, g, q, h, 29.0, t, t, 11.0, f, g, 80.0, 99.0, positive
+a, 1783.0, 11.0, u, g, x, h, 1.0, t, t, 11.0, f, g, 0.0, 3000.0, positive
+b, 20.0, 11045.0, u, g, c, v, 2.0, f, f, 0.0, t, g, 136.0, 0.0, negative
+b, 3275.0, 2335.0, u, g, d, h, 575.0, f, f, 0.0, t, g, 292.0, 0.0, negative
+a, 5217.0, 0.0, y, p, ff, ff, 0.0, f, f, 0.0, f, g, 0.0, 0.0, negative
+b, 1808.0, 675.0, y, p, m, v, 4.0, f, f, 0.0, f, g, 140.0, 0.0, negative
+b, 3825.0, 10125.0, y, p, k, v, 125.0, f, f, 0.0, f, g, 160.0, 0.0, negative
+a, 1917.0, 5415.0, u, g, i, h, 29.0, f, f, 0.0, f, g, 80.0, 484.0, negative
+b, 1883.0, 415.0, y, p, c, v, 165.0, f, t, 1.0, f, g, 200.0, 1.0, negative
+a, 1608.0, 335.0, u, g, ff, ff, 0.0, f, t, 1.0, f, g, 160.0, 126.0, negative
+b, 3292.0, 25.0, u, g, aa, v, 175.0, f, t, 2.0, t, g, 720.0, 0.0, negative
+b, 1825.0, 165.0, u, g, d, v, 25.0, f, f, 0.0, t, s, 280.0, 0.0, negative
+a, 1592.0, 2875.0, u, g, q, v, 85.0, f, f, 0.0, f, g, 120.0, 0.0, negative
+b, 1917.0, 0.0, y, p, m, bb, 0.0, f, f, 0.0, t, s, 500.0, 1.0, positive
+b, 3367.0, 125.0, u, g, w, v, 1165.0, f, f, 0.0, f, g, 120.0, 0.0, negative
+b, 3483.0, 25.0, y, p, w, v, 3.0, f, f, 0.0, f, s, 200.0, 0.0, negative
+a, 3325.0, 25.0, y, p, c, v, 25.0, f, f, 0.0, t, g, 0.0, 2.0, negative
+a, 3325.0, 3.0, y, p, aa, v, 2.0, f, f, 0.0, f, g, 180.0, 0.0, negative
+a, 3908.0, 4.0, u, g, c, v, 3.0, f, f, 0.0, f, g, 480.0, 0.0, negative
+b, 3892.0, 175.0, u, g, k, v, 5.0, f, f, 0.0, t, g, 300.0, 2.0, negative
+b, 3075.0, 1585.0, u, g, d, v, 585.0, f, f, 0.0, t, s, 0.0, 0.0, negative
+a, 16.0, 165.0, u, g, aa, v, 1.0, f, t, 2.0, t, g, 320.0, 1.0, negative
+b, 3242.0, 3.0, u, g, d, v, 165.0, f, f, 0.0, t, g, 120.0, 0.0, negative
+b, 2442.0, 2.0, u, g, e, dd, 165.0, f, t, 2.0, f, g, 320.0, 1300.0, negative
+b, 2625.0, 154.0, u, g, w, v, 125.0, f, f, 0.0, f, g, 100.0, 0.0, negative
+a, 2083.0, 5.0, y, p, e, dd, 1.0, f, f, 0.0, f, g, 260.0, 0.0, negative
+b, 3442.0, 1335.0, u, g, i, bb, 125.0, f, f, 0.0, t, g, 440.0, 4500.0, negative
+b, 2742.0, 125.0, u, g, aa, bb, 25.0, f, f, 0.0, t, g, 720.0, 0.0, negative
+a, 3308.0, 1625.0, u, g, d, v, 54.0, f, f, 0.0, t, g, 0.0, 0.0, negative
+b, 2892.0, 375.0, u, g, c, v, 29.0, f, f, 0.0, f, g, 220.0, 140.0, negative
+a, 1958.0, 665.0, y, p, c, v, 1.0, f, t, 1.0, f, g, 2000.0, 2.0, negative
+b, 16.0, 3125.0, u, g, w, v, 85.0, f, t, 1.0, f, g, 0.0, 6.0, negative
+b, 3125.0, 2835.0, u, g, ff, ff, 0.0, f, t, 5.0, f, g, 176.0, 146.0, negative
+a, 2267.0, 79.0, u, g, i, v, 85.0, f, f, 0.0, f, g, 144.0, 0.0, negative
+b, 4058.0, 15.0, u, g, i, bb, 0.0, f, f, 0.0, f, s, 300.0, 0.0, negative
+a, 2767.0, 204.0, u, g, w, v, 25.0, f, f, 0.0, t, g, 180.0, 50.0, negative
+b, 3358.0, 335.0, y, p, cc, v, 85.0, f, f, 0.0, f, g, 180.0, 0.0, negative
+b, 2292.0, 3165.0, y, p, c, v, 165.0, f, f, 0.0, f, g, 160.0, 1058.0, negative
+b, 2592.0, 875.0, u, g, k, v, 375.0, f, t, 2.0, t, g, 174.0, 3.0, negative
+b, 1725.0, 3.0, u, g, k, v, 4.0, f, f, 0.0, t, g, 160.0, 40.0, negative
+b, 5242.0, 15.0, u, g, d, v, 375.0, f, f, 0.0, t, g, 0.0, 350.0, negative
+b, 2967.0, 75.0, y, p, c, v, 4.0, f, f, 0.0, f, g, 240.0, 0.0, negative
+b, 2567.0, 29.0, y, p, c, v, 15.0, f, f, 0.0, t, g, 160.0, 0.0, negative
+a, 245.0, 2415.0, y, p, c, v, 0.0, f, f, 0.0, f, g, 120.0, 0.0, negative
+b, 2108.0, 4125.0, y, p, i, h, 4.0, f, f, 0.0, f, g, 140.0, 100.0, negative
+b, 235.0, 3165.0, y, p, k, v, 415.0, f, t, 1.0, t, g, 280.0, 80.0, negative
+b, 3925.0, 95.0, u, g, m, v, 65.0, t, t, 14.0, f, g, 240.0, 4607.0, positive
+b, 2575.0, 5.0, u, g, c, v, 146.0, t, t, 5.0, t, g, 312.0, 0.0, positive
+a, 6408.0, 165.0, u, g, ff, ff, 0.0, t, t, 1.0, f, g, 232.0, 100.0, positive
+a, 46.0, 4.0, u, g, j, j, 0.0, t, f, 0.0, f, g, 100.0, 960.0, positive
+b, 2267.0, 254.0, y, p, c, h, 2585.0, t, f, 0.0, f, g, 0.0, 0.0, positive
+a, 30.0, 529.0, u, g, e, dd, 225.0, t, t, 5.0, t, g, 99.0, 500.0, positive
+b, 2283.0, 3.0, u, g, m, v, 129.0, t, t, 1.0, f, g, 260.0, 800.0, positive
+b, 4517.0, 15.0, u, g, c, v, 25.0, t, f, 0.0, t, g, 140.0, 0.0, negative
+a, 2492.0, 125.0, u, g, ff, ff, 0.0, t, f, 0.0, f, g, 80.0, 0.0, negative
+b, 3425.0, 175.0, u, g, w, bb, 25.0, t, f, 0.0, t, g, 163.0, 0.0, negative
+b, 3633.0, 379.0, u, g, w, v, 1165.0, t, f, 0.0, t, g, 200.0, 0.0, negative
+b, 3008.0, 104.0, y, p, i, bb, 5.0, t, t, 10.0, t, g, 132.0, 28.0, negative
+b, 4833.0, 12.0, u, g, m, v, 16.0, t, f, 0.0, f, s, 110.0, 0.0, positive
+b, 3475.0, 15.0, u, g, r, n, 5375.0, t, t, 9.0, t, g, 0.0, 134.0, positive
+a, 3217.0, 146.0, u, g, w, v, 1085.0, t, t, 16.0, f, g, 120.0, 2079.0, positive
+b, 4217.0, 504.0, u, g, q, h, 1275.0, t, f, 0.0, t, g, 92.0, 0.0, positive
+a, 2083.0, 3.0, u, g, aa, v, 4.0, t, f, 0.0, f, g, 100.0, 0.0, positive
+a, 6517.0, 14.0, u, g, ff, ff, 0.0, t, t, 11.0, t, g, 0.0, 1400.0, positive
+b, 5158.0, 15.0, u, g, c, v, 85.0, t, t, 9.0, f, g, 0.0, 0.0, positive
+a, 4608.0, 3.0, u, g, c, v, 2375.0, t, t, 8.0, t, g, 396.0, 4159.0, positive
+b, 205.0, 2415.0, u, g, c, v, 2.0, t, t, 11.0, t, g, 200.0, 3000.0, positive
+b, 2008.0, 25.0, u, g, q, v, 125.0, f, f, 0.0, f, g, 200.0, 0.0, negative
+b, 3233.0, 35.0, u, g, k, v, 5.0, f, f, 0.0, t, g, 232.0, 0.0, negative
+b, 2925.0, 13.0, u, g, d, h, 5.0, f, f, 0.0, f, g, 228.0, 0.0, negative
+b, 4092.0, 5.0, y, p, m, v, 5.0, f, f, 0.0, t, g, 130.0, 0.0, negative
+b, 3558.0, 75.0, u, g, k, v, 15.0, f, f, 0.0, t, g, 231.0, 0.0, negative
+a, 3517.0, 375.0, u, g, ff, ff, 0.0, f, t, 6.0, f, g, 0.0, 200.0, negative
+b, 215.0, 115.0, u, g, i, v, 5.0, t, f, 0.0, t, g, 100.0, 68.0, negative
+a, 2108.0, 5.0, y, p, ff, ff, 0.0, f, f, 0.0, f, g, 0.0, 0.0, negative
+b, 2567.0, 325.0, u, g, c, h, 229.0, f, t, 1.0, t, g, 416.0, 21.0, negative
+b, 2983.0, 35.0, u, g, c, v, 165.0, f, f, 0.0, f, g, 216.0, 0.0, negative
+a, 235.0, 15.0, u, g, w, v, 875.0, f, f, 0.0, t, g, 160.0, 0.0, negative
+b, 3208.0, 4.0, y, p, cc, v, 15.0, f, f, 0.0, t, g, 120.0, 0.0, negative
+a, 1792.0, 54.0, u, g, c, v, 175.0, f, t, 1.0, t, g, 80.0, 5.0, negative
+b, 3033.0, 5.0, u, g, d, h, 85.0, f, f, 0.0, t, s, 252.0, 0.0, negative
