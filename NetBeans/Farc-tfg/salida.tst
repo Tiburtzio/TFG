@@ -15,7 +15,9 @@ Iris-setosa Iris-setosa
 Iris-setosa Iris-setosa
 Iris-setosa Iris-setosa
 Iris-setosa Iris-setosa
+Iris-setosa Iris-setosa
 Iris-versicolor Iris-versicolor
+Iris-versicolor Iris-virginica
 Iris-versicolor Iris-versicolor
 Iris-versicolor Iris-versicolor
 Iris-versicolor Iris-versicolor
@@ -34,6 +36,4 @@ Iris-virginica Iris-virginica
 Iris-virginica Iris-virginica
 Iris-virginica Iris-virginica
 Iris-setosa Iris-setosa
-Iris-setosa Iris-setosa
-Iris-versicolor Iris-versicolor
 Iris-virginica Iris-virginica

@@ -87,14 +87,14 @@ public class myDataset {
     public double[] getOutputAsReal() {
         double[] output = new double[outputReal.length];
         for (int i = 0; i < outputReal.length; i++) {
-            output[i] = outputInteger[i];
+            output[i] = outputReal[i];
         }
         return output;
     }
 
     /**
      * Returns the output of the data-set as nominal values
-     * @return String[] an array of nomianl values corresponding to the output values of the dataset
+     * @return String[] an array of nominal values corresponding to the output values of the dataset
      */
     public String[] getOutputAsString() {
         String[] output = new String[this.output.length];
@@ -415,7 +415,7 @@ public class myDataset {
           rangos[i][0] = 0;
           rangos[i][1] = Attributes.getInputAttribute(i).getNumNominalValues()-1;
         }
-		else{
+        else{
           rangos[i][0] = Attributes.getInputAttribute(i).getMinAttribute();
           rangos[i][1] = Attributes.getInputAttribute(i).getMaxAttribute();
         }
