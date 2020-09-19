@@ -24,7 +24,7 @@ import java.lang.*;
 
 public class Individual implements Comparable {
 
-    double[] gene;
+    double[][] gene;
     int[] geneR;
     double fitness, accuracy, w1;
     int n_e, nGenes;
@@ -42,7 +42,9 @@ public class Individual implements Comparable {
         this.nGenes = dataBase.getnLabelsReal();
 
         if (this.nGenes > 0) {
-            this.gene = new double[this.nGenes];
+            for(int i=0; i < ruleBase.size(); i++){
+                this.gene = new double[i][this.nGenes];
+            }
         }
         this.geneR = new int[this.ruleBase.size()];
 //    for (int i = 0; i < this.geneR.length; i++)   this.geneR[i] = 1;
@@ -75,8 +77,10 @@ public class Individual implements Comparable {
 
     public void reset() {
         if (this.nGenes > 0) {
-            for (int i = 0; i < this.nGenes; i++) {
-                this.gene[i] = 0.5;
+            for (int i = 0; i < this.ruleBase.size(); i++) {
+                for (int j = 0; j < this.nGenes; j++){
+                    this.gene[i][j] = 0.5;
+                }
             }
         }
         for (int i = 0; i < this.geneR.length; i++) {
@@ -86,8 +90,10 @@ public class Individual implements Comparable {
 
     public void randomValues() {
         if (this.nGenes > 0) {
-            for (int i = 0; i < this.nGenes; i++) {
-                this.gene[i] = Randomize.Rand();
+            for (int i = 0; i < this.ruleBase.size(); i++) {
+                for (int j = 0; j < this.nGenes; j++){
+                    this.gene[i][j] = Randomize.Rand();
+                }
             }
         }
 

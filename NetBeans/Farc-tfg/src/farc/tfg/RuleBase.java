@@ -209,7 +209,7 @@ public class RuleBase {
         this.fitness = (100.0 * nHits) / (1.0 * this.train.size());
     }
 
-    public void evaluate(double[] gene, int[] selected) {
+    public void evaluate(double[][] gene, int[] selected) {
         int nHits, prediction;
 
         this.dataBase.decode(gene);

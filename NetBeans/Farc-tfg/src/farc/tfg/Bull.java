@@ -142,7 +142,10 @@ public class Bull {
           
           this.maxTrials = this.dataBase.n_variables*5000;
           //System.out.println("maximo iteraciones" + this.maxTrials);
-
+          
+    //Creamos la base de reglas 3D
+          this.dataBase.ini3DataBase(this.ruleBase);
+          
           pop = new Population(this.train, this.dataBase, this.ruleBase, this.populationSize, this.BITS_GEN, this.maxTrials, this.alpha);
           pop.Generation();
 

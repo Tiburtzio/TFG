@@ -88,7 +88,7 @@ public class DataBase {
         return (val);
     }
 
-    public void decode(double[] gene) {
+    public void decode(double[] gene, int rule) {
         int i, j, pos;
         double displacement;
 
@@ -109,11 +109,21 @@ public class DataBase {
                         }
                     }
 
-                    this.dataBase[i][j].x0 = this.dataBaseIni[i][j].x0 + displacement;
-                    this.dataBase[i][j].x1 = this.dataBaseIni[i][j].x1 + displacement;
-                    this.dataBase[i][j].x3 = this.dataBaseIni[i][j].x3 + displacement;
+                    //this.dataBase[i][j].x0 = this.dataBaseIni[i][j].x0 + displacement;
+                    //this.dataBase[i][j].x1 = this.dataBaseIni[i][j].x1 + displacement;
+                    //this.dataBase[i][j].x3 = this.dataBaseIni[i][j].x3 + displacement;
+                    
+                    this.dataBase3D.get(rule)[i][j].x0 = this.dataBaseIni[i][j].x0 + displacement;
+                    this.dataBase3D.get(rule)[i][j].x1 = this.dataBaseIni[i][j].x1 + displacement;
+                    this.dataBase3D.get(rule)[i][j].x3 = this.dataBaseIni[i][j].x3 + displacement;
                 }
             }
+        }
+    }
+    
+    public void decode(double[][] gene){
+        for(int rule = 0; rule < dataBase3D.size(); rule++){
+            decode(gene[rule],rule);
         }
     }
 
@@ -148,6 +158,15 @@ public class DataBase {
             return (1);  // Don't care
         } else {
             return (this.dataBase[variable][label].Fuzzifica(value));
+        }
+    }
+    
+    public void ini3DataBase(RuleBase ruleBase){
+        
+        dataBase3D = new ArrayList<Fuzzy[][]>();
+        
+        for(int i=0; i < ruleBase.size(); i++){
+            dataBase3D.add(dataBase);
         }
     }
 
