@@ -86,7 +86,11 @@ public class Rule implements Comparable {
   public double matching(double[] example) {
     return (this.degreeProduct(example));
   }
-
+  
+  public double matching(double[] example, int rule){
+      return (this.degreeProduct(example, rule));
+  }
+  
   private double degreeProduct(double[] example) {
     double degree;
 
@@ -97,7 +101,18 @@ public class Rule implements Comparable {
 
     return (degree * this.conf);
   }
+  
+  private double degreeProduct(double[] example, int rule){
+      double degree;
+      
+      degree = 1.0;
+      for (int i = 0; i < antecedent.length && degree > 0.0; i++) {
+      degree *= dataBase.matching(i, antecedent[i], example[i], rule);
+    }
 
+    return (degree * this.conf);
+  }
+  
   public void setConfidence(double conf) {
     this.conf = conf;
   }

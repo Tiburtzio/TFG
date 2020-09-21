@@ -74,6 +74,10 @@ public class RuleBase {
 
         return (br);
     }
+    
+    public void updateDataBase(DataBase data){
+        this.dataBase = data;
+    }
 
     public void add(Rule rule) {
         this.ruleBase.add(rule);
@@ -260,7 +264,7 @@ public class RuleBase {
         for (int i = 0; i < this.ruleBase.size(); i++) {
             if (selected[i] > 0) {
                 Rule r = this.ruleBase.get(i);
-                degree = r.matching(example);
+                degree = r.matching(example, i);
 
                 if (degree > max) {
                     max = degree;
@@ -308,7 +312,7 @@ public class RuleBase {
             if (selected[i] > 0) {
                 Rule r = this.ruleBase.get(i);
 
-                degree = r.matching(example);
+                degree = r.matching(example, i);
                 degreeClass[r.getClas()] += degree;
             }
         }

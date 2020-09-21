@@ -161,9 +161,17 @@ public class DataBase {
         }
     }
     
+    public double matching(int variable, int label, double value, int rule) {
+        if ((variable < 0) || (label < 0)) {
+            return (1);  // Don't care
+        } else {
+            return (this.dataBase3D.get(rule)[variable][label].Fuzzifica(value));
+        }
+    }
+    
     public void ini3DataBase(RuleBase ruleBase){
         
-        dataBase3D = new ArrayList<Fuzzy[][]>();
+        dataBase3D = new ArrayList<>();
         
         for(int i=0; i < ruleBase.size(); i++){
             dataBase3D.add(dataBase);

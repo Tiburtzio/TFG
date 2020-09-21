@@ -42,9 +42,7 @@ public class Individual implements Comparable {
         this.nGenes = dataBase.getnLabelsReal();
 
         if (this.nGenes > 0) {
-            for(int i=0; i < ruleBase.size(); i++){
-                this.gene = new double[i][this.nGenes];
-            }
+            this.gene = new double[this.ruleBase.size()][this.nGenes];
         }
         this.geneR = new int[this.ruleBase.size()];
 //    for (int i = 0; i < this.geneR.length; i++)   this.geneR[i] = 1;
@@ -61,9 +59,11 @@ public class Individual implements Comparable {
         ind.nGenes = this.nGenes;
 
         if (this.nGenes > 0) {
-            ind.gene = new double[this.nGenes];
-            for (int j = 0; j < this.nGenes; j++) {
-                ind.gene[j] = this.gene[j];
+            ind.gene = new double[this.ruleBase.size()][this.nGenes];
+            for (int j = 0; j < this.ruleBase.size(); j++) {
+                for (int k = 0; k < this.nGenes; k++){
+                    ind.gene[j][k] = this.gene[j][k];
+                }
             }
         }
 
@@ -155,7 +155,7 @@ public class Individual implements Comparable {
      * **********************************************************************
      */
     private int StringRep(Individual indiv, int BITS_GEN) {
-        int i, j, pos, length, count;
+        int i, j, k, pos, length, count;
         long n;
         char last;
         double INCREMENTO;
@@ -172,41 +172,45 @@ public class Individual implements Comparable {
 
         pos = 0;
         for (i = 0; i < this.nGenes; i++) {
-            n = (int) (this.gene[i] / INCREMENTO + 0.5);
+            for (k = 0; k < this.ruleBase.size(); k++){
+                n = (int) (this.gene[k][i] / INCREMENTO + 0.5);
 
-            for (j = BITS_GEN - 1; j >= 0; j--) {
-                stringAux[j] = (char) ('0' + (n & 1));
-                n >>= 1;
-            }
-
-            last = '0';
-            for (j = 0; j < BITS_GEN; j++, pos++) {
-                if (stringAux[j] != last) {
-                    stringIndiv1[pos] = (char) ('0' + 1);
-                } else {
-                    stringIndiv1[pos] = (char) ('0' + 0);
+                for (j = BITS_GEN - 1; j >= 0; j--) {
+                    stringAux[j] = (char) ('0' + (n & 1));
+                    n >>= 1;
                 }
-                last = stringAux[j];
+
+                last = '0';
+                for (j = 0; j < BITS_GEN; j++, pos++) {
+                    if (stringAux[j] != last) {
+                        stringIndiv1[pos] = (char) ('0' + 1);
+                    } else {
+                        stringIndiv1[pos] = (char) ('0' + 0);
+                    }
+                    last = stringAux[j];
+                }
             }
         }
 
         pos = 0;
         for (i = 0; i < this.nGenes; i++) {
-            n = (int) (indiv.gene[i] / INCREMENTO + 0.5);
+            for (k = 0; k < this.ruleBase.size(); k++){
+                n = (int) (indiv.gene[k][i] / INCREMENTO + 0.5);
 
-            for (j = BITS_GEN - 1; j >= 0; j--) {
-                stringAux[j] = (char) ('0' + (n & 1));
-                n >>= 1;
-            }
-
-            last = '0';
-            for (j = 0; j < BITS_GEN; j++, pos++) {
-                if (stringAux[j] != last) {
-                    stringIndiv2[pos] = (char) ('0' + 1);
-                } else {
-                    stringIndiv2[pos] = (char) ('0' + 0);
+                for (j = BITS_GEN - 1; j >= 0; j--) {
+                    stringAux[j] = (char) ('0' + (n & 1));
+                    n >>= 1;
                 }
-                last = stringAux[j];
+
+                last = '0';
+                for (j = 0; j < BITS_GEN; j++, pos++) {
+                    if (stringAux[j] != last) {
+                        stringIndiv2[pos] = (char) ('0' + 1);
+                    } else {
+                        stringIndiv2[pos] = (char) ('0' + 0);
+                    }
+                    last = stringAux[j];
+                }
             }
         }
 
@@ -270,30 +274,32 @@ public class Individual implements Comparable {
 
     public void xPC_BLX(Individual indiv, double d) {
         double I, A1, C1;
-        int i;
+        int i, j;
+        
+        for (j = 0; j < this.ruleBase.size(); j++){
+            for (i = 0; i < this.nGenes; i++) {
+                I = d * Math.abs(gene[j][i] - indiv.gene[j][i]);
 
-        for (i = 0; i < this.nGenes; i++) {
-            I = d * Math.abs(gene[i] - indiv.gene[i]);
+                A1 = gene[j][i] - I;
+                if (A1 < 0.0) {
+                    A1 = 0.0;
+                }
+                C1 = gene[j][i] + I;
+                if (C1 > 1.0) {
+                    C1 = 1.0;
+                }
+                gene[j][i] = A1 + Randomize.Rand() * (C1 - A1);
 
-            A1 = gene[i] - I;
-            if (A1 < 0.0) {
-                A1 = 0.0;
+                A1 = indiv.gene[j][i] - I;
+                if (A1 < 0.0) {
+                    A1 = 0.0;
+                }
+                C1 = indiv.gene[j][i] + I;
+                if (C1 > 1.0) {
+                    C1 = 1.0;
+                }
+                indiv.gene[j][i] = A1 + Randomize.Rand() * (C1 - A1);
             }
-            C1 = gene[i] + I;
-            if (C1 > 1.0) {
-                C1 = 1.0;
-            }
-            gene[i] = A1 + Randomize.Rand() * (C1 - A1);
-
-            A1 = indiv.gene[i] - I;
-            if (A1 < 0.0) {
-                A1 = 0.0;
-            }
-            C1 = indiv.gene[i] + I;
-            if (C1 > 1.0) {
-                C1 = 1.0;
-            }
-            indiv.gene[i] = A1 + Randomize.Rand() * (C1 - A1);
         }
     }
 
@@ -309,12 +315,14 @@ public class Individual implements Comparable {
             p2 = p1;
             p1 = p2;
         }
-
-        for (i = 0; i < this.nGenes; i++) {
-            if (i >= p1 && i <= p2) {
-                aux = gene[i];
-                gene[i] = indiv.gene[i];
-                indiv.gene[i] = aux;
+        
+        for (int j = 0; j < this.ruleBase.size(); j++){
+            for (i = 0; i < this.nGenes; i++) {
+                if (i >= p1 && i <= p2) {
+                    aux = gene[j][i];
+                    gene[j][i] = indiv.gene[j][i];
+                    indiv.gene[j][i] = aux;
+                }
             }
         }
     }
@@ -328,6 +336,7 @@ public class Individual implements Comparable {
 
         for (i = geneR.length - 1; i >= 0; i--) {
             if (geneR[i] < 1) {
+                ruleBase.dataBase.dataBase3D.remove(i);
                 ruleBase.remove(i);
             }
         }
