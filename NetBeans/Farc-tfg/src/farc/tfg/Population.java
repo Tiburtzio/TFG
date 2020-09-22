@@ -53,7 +53,7 @@ public class Population {
         this.pop_size = size;
         this.alpha = alpha;
         this.maxTrials = maxTrials;
-        this.Lini = ((dataBase.getnLabelsReal() * BITS_GEN) + ruleBase.size()) / 4.0;
+        this.Lini = ((dataBase.getnLabelsReal() * ruleBase.size() * BITS_GEN) + ruleBase.size()) / 4.0;
         this.L = this.Lini;
 //		this.ruleBase.evaluate();
         this.w1 = this.alpha * (double) ruleBase.size();

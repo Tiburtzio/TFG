@@ -193,11 +193,15 @@ public class DataBase {
 
     public String printString() {
         String string = new String("@Using Triangular Membership Functions as antecedent fuzzy sets");
-        for (int i = 0; i < this.n_variables; i++) {
-            string += "\n\n@Number of Labels in Variable " + (i + 1) + ": " + this.nLabels[i];
-            string += "\n" + this.names[i] + ":\n";
-            for (int j = 0; j < this.nLabels[i]; j++) {
-                string += this.dataBase[i][j].name + ": (" + this.dataBase[i][j].x0 + "," + this.dataBase[i][j].x1 + "," + this.dataBase[i][j].x3 + ")\n";
+        
+        for (int i = 0; i < this.dataBase3D.size(); i++) {
+            string += "\n DataBase for Rule " + i + ": \n";
+            for (int j = 0; j < this.n_variables; j++) {
+                string += "\n\n@Number of Labels in Variable " + (j + 1) + ": " + this.nLabels[j];
+                string += "\n" + this.names[j] + ":\n";
+                for (int k = 0; k < this.nLabels[j]; k++){
+                    string += "\t" + this.dataBase3D.get(i)[j][k].name + ": (" + this.dataBase3D.get(i)[j][k].x0 + "," + this.dataBase3D.get(i)[j][k].x1 + "," + this.dataBase3D.get(i)[j][k].x3 + ")\n";
+                }
             }
         }
         return string;

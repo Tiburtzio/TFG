@@ -8,3 +8,9 @@
 00:00:01  ../data/iris/iris-5-1tra.dat
 00:00:01  ../data/iris/iris-5-2tra.dat
 00:00:01  ../data/iris/iris-5-2tra.dat
+00:00:01  ../data/iris/iris-5-2tra.dat
+00:00:02  ../data/iris/iris-5-2tra.dat
+00:02:21  ../data/pageblocks/pageblocks-5-2tra.dat
+00:00:57  ../data/wine/wine-5-4tra.dat
+00:00:02  ../data/iris/iris-5-1tra.dat
+00:00:02  ../data/iris/iris-5-1tra.dat

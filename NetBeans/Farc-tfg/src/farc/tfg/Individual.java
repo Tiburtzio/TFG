@@ -159,14 +159,14 @@ public class Individual implements Comparable {
         long n;
         char last;
         double INCREMENTO;
-        char[] stringIndiv1;
-        char[] stringIndiv2;
-        char[] stringAux;
+        char[][] stringIndiv1;
+        char[][] stringIndiv2;
+        char[][] stringAux;
 
         length = this.nGenes * BITS_GEN;
-        stringIndiv1 = new char[length];
-        stringIndiv2 = new char[length];
-        stringAux = new char[length];
+        stringIndiv1 = new char[this.ruleBase.size()][length];
+        stringIndiv2 = new char[this.ruleBase.size()][length];
+        stringAux = new char[this.ruleBase.size()][length];
 
         INCREMENTO = 1.0 / (Math.pow(2.0, (double) BITS_GEN) - 1.0);
 
@@ -176,20 +176,21 @@ public class Individual implements Comparable {
                 n = (int) (this.gene[k][i] / INCREMENTO + 0.5);
 
                 for (j = BITS_GEN - 1; j >= 0; j--) {
-                    stringAux[j] = (char) ('0' + (n & 1));
+                    stringAux[k][j] = (char) ('0' + (n & 1));
                     n >>= 1;
                 }
 
                 last = '0';
                 for (j = 0; j < BITS_GEN; j++, pos++) {
-                    if (stringAux[j] != last) {
-                        stringIndiv1[pos] = (char) ('0' + 1);
+                    if (stringAux[k][j] != last) {
+                        stringIndiv1[k][pos] = (char) ('0' + 1);
                     } else {
-                        stringIndiv1[pos] = (char) ('0' + 0);
+                        stringIndiv1[k][pos] = (char) ('0' + 0);
                     }
-                    last = stringAux[j];
+                    last = stringAux[k][j];
                 }
             }
+            pos = 0;
         }
 
         pos = 0;
@@ -198,30 +199,33 @@ public class Individual implements Comparable {
                 n = (int) (indiv.gene[k][i] / INCREMENTO + 0.5);
 
                 for (j = BITS_GEN - 1; j >= 0; j--) {
-                    stringAux[j] = (char) ('0' + (n & 1));
+                    stringAux[k][j] = (char) ('0' + (n & 1));
                     n >>= 1;
                 }
 
                 last = '0';
                 for (j = 0; j < BITS_GEN; j++, pos++) {
-                    if (stringAux[j] != last) {
-                        stringIndiv2[pos] = (char) ('0' + 1);
+                    if (stringAux[k][j] != last) {
+                        stringIndiv2[k][pos] = (char) ('0' + 1);
                     } else {
-                        stringIndiv2[pos] = (char) ('0' + 0);
+                        stringIndiv2[k][pos] = (char) ('0' + 0);
                     }
-                    last = stringAux[j];
+                    last = stringAux[k][j];
                 }
             }
+            pos = 0;
         }
 
         count = 0;
         for (i = 0; i < length; i++) {
-            if (stringIndiv1[i] != stringIndiv2[i]) {
-                count++;
+            for (k = 0; k < this.ruleBase.size(); k++){
+                if (stringIndiv1[k][i] != stringIndiv2[k][i]) {
+                    count++;
+                }
             }
         }
 
-        return count;
+        return (count);
     }
 
     public int distHamming(Individual ind, int BITS_GEN) {
