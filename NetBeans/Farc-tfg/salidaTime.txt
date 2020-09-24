@@ -16,3 +16,5 @@
 2  ../data/iris/iris-5-1tra.dat
 4  ../data/iris/iris-5-1tra.dat
 3  ../data/iris/iris-5-1tra.dat
+4  ../data/iris/iris-5-1tra.dat
+2  ../data/iris/iris-5-1tra.dat

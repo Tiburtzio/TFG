@@ -25,7 +25,7 @@ public class Bull {
   RuleBase ruleBase;
   Apriori apriori;
   Population pop;
-  long startTime, totalTime, startTimeApriori, totalTimeApriori;
+  long startTime, totalTime, startTimeApriori, totalTimeApriori, startTimeGen, totalTimeGen;
 
   //We may declare here the algorithm's parameters
   int nLabels, populationSize, depth, K, maxTrials, typeInference, BITS_GEN;
@@ -147,9 +147,12 @@ public class Bull {
           this.dataBase.ini3DataBase(this.ruleBase);
           this.ruleBase.updateDataBase(dataBase);
           
+          startTimeGen = System.currentTimeMillis();
           pop = new Population(this.train, this.dataBase, this.ruleBase, this.populationSize, this.BITS_GEN, this.maxTrials, this.alpha);
           pop.Generation();
-
+          totalTimeGen = System.currentTimeMillis() - startTimeGen;
+          this.printGenerationTime(totalTimeGen);
+          
 	  System.out.println("Building classifier");
 	  this.ruleBase = pop.getBestRB();
           
@@ -176,11 +179,33 @@ public class Bull {
       System.out.println("Algorithm Finished");
     }
   }
+  
+    public void printGenerationTime(long total) {
+        
+        System.out.println("Tiempo de procesamiento genetico " + total);
+        total /= 1000;
+        long seg = total % 60;
+        total /= 60;
+        long min = total % 60;
+        long hor = total / 60;
+        String stringGen = "";
 
-  public void writeEvo() {
-	this.evolution += "\n\n";
-    Files.addToFile(this.fileEvo, this.evolution);
-  }
+        if (hor < 10) stringGen = stringGen + "0" + hor + ":";
+        else    stringGen = stringGen + hor + ":";
+
+        if (min < 10) stringGen = stringGen + "0" + min + ":";
+        else stringGen = stringGen + min + ":";
+
+        if (seg < 10) stringGen = stringGen + "0" + seg;
+        else  stringGen = stringGen + seg;
+
+        System.out.println("Tiempo de procesamiento de la parte genetica " + stringGen);
+    }
+
+    public void writeEvo() {
+        this.evolution += "\n\n";
+        Files.addToFile(this.fileEvo, this.evolution);
+    }
 
   public void writeRules() {
     String stringOut = new String("");
