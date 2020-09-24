@@ -1,0 +1,16 @@
+algorithm = FARC-HD
+
+inputData = "../data/iris/iris-5-2tra.dat" "../data/iris/iris-5-2tra.dat" "../data/iris/iris-5-2tst.dat"
+outputData = "./salida.tra" "./salida.tst" "salidaBD.txt" "salidaBR.txt" "salidaTime.txt" "salidaHour.txt" "salidaRules.txt" "salidaEvolution.txt"
+
+Seed = 53743421
+Number of Labels = 5
+Minimum Support = 0.05
+Minimum Confidence = 0.8
+Deph of Trees = 3
+K = 2
+Maximum Evaluations = 20000
+Population Size = 50
+Alpha = 0.02
+Bits per Gene = 30
+Type of Inference = 1

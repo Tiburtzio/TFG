@@ -1,0 +1,9 @@
+00:00:00  ../data/iris/iris-5-1tra.dat
+00:00:01  ../data/iris/iris-5-1tra.dat
+00:00:01  ../data/iris/iris-5-1tra.dat
+00:00:01  ../data/iris/iris-5-1tra.dat
+00:00:01  ../data/iris/iris-5-1tra.dat
+00:00:01  ../data/iris/iris-5-1tra.dat
+00:00:01  ../data/iris/iris-5-1tra.dat
+00:00:01  ../data/iris/iris-5-1tra.dat
+00:00:01  ../data/iris/iris-5-2tra.dat
