@@ -285,7 +285,7 @@ public class RuleBase {
 
         for (int i = 0; i < this.ruleBase.size(); i++) {
             Rule r = this.ruleBase.get(i);
-            degree = r.matching(example);
+            degree = r.matching(example,i);
 
             if (degree > max) {
                 max = degree;
@@ -350,7 +350,7 @@ public class RuleBase {
         for (i = 0; i < this.ruleBase.size(); i++) {
             Rule r = this.ruleBase.get(i);
 
-            degree = r.matching(example);
+            degree = r.matching(example,i);
             degreeClass[r.getClas()] += degree;
         }
 
@@ -463,6 +463,28 @@ public class RuleBase {
 //	  if (uncover > 0)  System.out.println("Sale de reduce Reglas para la clase " + clas + " no cubiertos por la BR: " + uncover);
         exampleWeight.clear();
         //System.gc();
+    }
+    
+    public void evaluateDS(myDataset DS) {
+        int nHits, prediction;
+        nHits = 0;
+        this.nUncover = 0;
+        for (int j = 0; j < DS.getnClasses(); j++) {
+            this.nUncoverClas[j] = 0;
+        }
+
+        for (int j = 0; j < DS.size(); j++) {
+            prediction = this.FRM(DS.getExample(j));
+            if (DS.getOutputAsInteger(j) == prediction) {
+                nHits++;
+            }
+            if (prediction < 0) {
+                this.nUncover++;
+                this.nUncoverClas[DS.getOutputAsInteger(j)]++;
+            }
+        }
+
+        this.fitness = (100.0 * nHits) / (1.0 * DS.size());
     }
 
     public String printString() {

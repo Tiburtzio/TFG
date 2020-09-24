@@ -39,7 +39,7 @@ public class Individual implements Comparable {
         this.fitness = Double.NEGATIVE_INFINITY;
         this.accuracy = 0.0;
         this.n_e = 0;
-        this.nGenes = dataBase.getnLabelsReal();
+        this.nGenes = dataBase.getnLabelsReal(); //El nombre no es representativo
 
         if (this.nGenes > 0) {
             this.gene = new double[this.ruleBase.size()][this.nGenes];

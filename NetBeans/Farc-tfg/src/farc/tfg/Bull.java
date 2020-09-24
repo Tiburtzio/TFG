@@ -152,6 +152,11 @@ public class Bull {
 
 	  System.out.println("Building classifier");
 	  this.ruleBase = pop.getBestRB();
+          
+            this.ruleBase.evaluateDS(this.train);
+            System.out.println("Resutlado en train: " + this.ruleBase.getAccuracy());
+            this.ruleBase.evaluateDS(this.test);
+            System.out.println("Resutlado en test: " + this.ruleBase.getAccuracy());
 
 	  this.rulesStage3 = (long) this.ruleBase.size();
 	  this.evolution = pop.getEvolution();
