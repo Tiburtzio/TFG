@@ -38,3 +38,7 @@
 0  ../data/iris/iris-5-1tra.dat
 0  ../data/iris/iris-5-1tra.dat
 2  ../data/iris/iris-5-1tra.dat
+3  ../data/iris/iris-5-1tra.dat
+132  ../data/pageblocks/pageblocks-5-1tra.dat
+45  ../data/wine/wine-5-1tra.dat
+46  ../data/wine/wine-5-1tra.dat

@@ -38,3 +38,7 @@
 00:00:00  ../data/iris/iris-5-1tra.dat
 00:00:00  ../data/iris/iris-5-1tra.dat
 00:00:02  ../data/iris/iris-5-1tra.dat
+00:00:03  ../data/iris/iris-5-1tra.dat
+00:02:12  ../data/pageblocks/pageblocks-5-1tra.dat
+00:00:45  ../data/wine/wine-5-1tra.dat
+00:00:46  ../data/wine/wine-5-1tra.dat

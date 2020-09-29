@@ -171,8 +171,8 @@ public class Individual implements Comparable {
         INCREMENTO = 1.0 / (Math.pow(2.0, (double) BITS_GEN) - 1.0);
 
         pos = 0;
-        for (i = 0; i < this.nGenes; i++) {
-            for (k = 0; k < this.ruleBase.size(); k++){
+        for (k = 0; k < this.ruleBase.size(); k++){
+            for (i = 0; i < this.nGenes; i++) {
                 n = (int) (this.gene[k][i] / INCREMENTO + 0.5);
 
                 for (j = BITS_GEN - 1; j >= 0; j--) {
@@ -194,8 +194,8 @@ public class Individual implements Comparable {
         }
 
         pos = 0;
-        for (i = 0; i < this.nGenes; i++) {
-            for (k = 0; k < this.ruleBase.size(); k++){
+        for (k = 0; k < this.ruleBase.size(); k++){
+            for (i = 0; i < this.nGenes; i++) {
                 n = (int) (indiv.gene[k][i] / INCREMENTO + 0.5);
 
                 for (j = BITS_GEN - 1; j >= 0; j--) {
