@@ -11,6 +11,6 @@ Deph of Trees = 3
 K = 2
 Maximum Evaluations = 20000
 Population Size = 50
-Alpha = 0.02
+Alpha = 0.2
 Bits per Gene = 30
 Type of Inference = 1
