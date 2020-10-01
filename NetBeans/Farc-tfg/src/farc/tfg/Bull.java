@@ -140,7 +140,7 @@ public class Bull {
 
 	  System.out.println("Numero de reglas despues de apriori " + this.ruleBase.size());
           
-          this.maxTrials = this.dataBase.n_variables*5000;
+          //this.maxTrials = this.dataBase.n_variables*5000;
           //System.out.println("maximo iteraciones" + this.maxTrials);
           
     //Creamos la base de reglas 3D

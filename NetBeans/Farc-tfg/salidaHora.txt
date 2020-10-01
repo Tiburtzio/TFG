@@ -63,3 +63,4 @@
 00:04:34  ../data/penbased/penbased-5-1tra.dat
 00:01:23  ../data/magic/magic-5-1tra.dat
 00:01:50  ../data/cleveland/cleveland-5-1tra.dat
+00:07:38  ../data/cleveland/cleveland-5-1tra.dat
