@@ -1,6 +1,6 @@
 algorithm = FARC-HD
 
-inputData = "../data/cleveland/cleveland-5-1tra.dat" "../data/cleveland/cleveland-5-1tra.dat" "../data/cleveland/cleveland-5-1tst.dat"
+inputData = "../data/yeast/yeast-5-1tra.dat" "../data/yeast/yeast-5-1tra.dat" "../data/yeast/yeast-5-1tst.dat"
 outputData = "./salida.tra" "./salida.tst" "salidaBD.txt" "salidaBR.txt" "salidaTime.txt" "salidaHour.txt" "salidaRules.txt" "salidaEvolution.txt"
 
 Seed = 53743421
@@ -13,4 +13,4 @@ Maximum Evaluations = 20000
 Population Size = 50
 Alpha = 0.02
 Bits per Gene = 30
-Type of Inference = 0
+Type of Inference = 1
