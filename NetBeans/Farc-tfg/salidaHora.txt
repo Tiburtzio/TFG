@@ -94,3 +94,6 @@
 00:01:38  ../data/magic/magic-5-1tra.dat
 00:03:20  ../data/cleveland/cleveland-5-1tra.dat
 00:00:38  ../data/yeast/yeast-5-1tra.dat
+00:00:03  ../data/iris/iris-5-1tra.dat
+00:00:04  ../data/iris/iris-5-1tra.dat
+00:00:03  ../data/iris/iris-5-1tra.dat

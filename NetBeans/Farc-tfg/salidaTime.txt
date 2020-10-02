@@ -94,3 +94,6 @@
 98  ../data/magic/magic-5-1tra.dat
 200  ../data/cleveland/cleveland-5-1tra.dat
 38  ../data/yeast/yeast-5-1tra.dat
+3  ../data/iris/iris-5-1tra.dat
+4  ../data/iris/iris-5-1tra.dat
+3  ../data/iris/iris-5-1tra.dat
