@@ -140,7 +140,7 @@ public class Bull {
 
 	  System.out.println("Numero de reglas despues de apriori " + this.ruleBase.size());
           
-          this.maxTrials = this.dataBase.n_variables*5000;
+          //this.maxTrials = this.dataBase.n_variables*5000;
           //System.out.println("maximo iteraciones" + this.maxTrials);
           
     //Creamos la base de reglas 3D
@@ -155,11 +155,14 @@ public class Bull {
           
 	  System.out.println("Building classifier");
 	  this.ruleBase = pop.getBestRB();
+          System.out.println("No cubiertos: " + this.ruleBase.nUncover);
           
             this.ruleBase.evaluateDS(this.train);
             System.out.println("Resutlado en train: " + this.ruleBase.getAccuracy());
+            System.out.println("Clases no cubiertas en train: " + this.ruleBase.fallo);
             this.ruleBase.evaluateDS(this.test);
             System.out.println("Resutlado en test: " + this.ruleBase.getAccuracy());
+            System.out.println("Clases no cubiertas en test: " + this.ruleBase.fallo);
 
 	  this.rulesStage3 = (long) this.ruleBase.size();
 	  this.evolution = pop.getEvolution();

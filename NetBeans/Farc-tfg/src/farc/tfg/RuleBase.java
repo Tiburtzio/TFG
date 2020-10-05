@@ -25,7 +25,7 @@ public class RuleBase {
     ArrayList<Rule> ruleBase;
     DataBase dataBase;
     myDataset train;
-    int n_variables, K, nUncover, typeInference, defaultRule;
+    int n_variables, K, nUncover, typeInference, defaultRule, fallo;
     int[] nUncoverClas;
     double fitness;
 
@@ -50,6 +50,7 @@ public class RuleBase {
         this.defaultRule = -1;
         this.nUncover = 0;
         this.nUncoverClas = new int[this.train.getnClasses()];
+        this.fallo = 0;
     }
 
     public RuleBase clone() {
@@ -68,6 +69,7 @@ public class RuleBase {
         br.defaultRule = this.defaultRule;
         br.nUncover = this.nUncover;
         br.nUncoverClas = new int[this.train.getnClasses()];
+        br.fallo = this.fallo;
         for (int i = 0; i < this.train.getnClasses(); i++) {
             br.nUncoverClas[i] = this.nUncoverClas[i];
         }
@@ -292,6 +294,9 @@ public class RuleBase {
                 clas = r.getClas();
             }
         }
+        if(clas == defaultRule){
+            clas = -2; //Ejemplo no cubierto
+        }
 
         return clas;
     }
@@ -330,7 +335,8 @@ public class RuleBase {
         }
 
         if (cont > 0) {
-            clas = defaultRule;
+            clas = -2; //Ejemplo no cubierto o empate entre clases a la que pertenece
+            //clas = defaultRule;
         }
         return clas;
     }
@@ -367,7 +373,8 @@ public class RuleBase {
         }
 
         if (cont > 0) {
-            clas = defaultRule;
+            clas = -2; //Empate en dos clases o no 
+            //clas = defaultRule;
         }
         return clas;
     }
@@ -469,6 +476,7 @@ public class RuleBase {
         int nHits, prediction;
         nHits = 0;
         this.nUncover = 0;
+        this.fallo = 0;
         for (int j = 0; j < DS.getnClasses(); j++) {
             this.nUncoverClas[j] = 0;
         }
@@ -477,12 +485,14 @@ public class RuleBase {
             prediction = this.FRM(DS.getExample(j));
             if (DS.getOutputAsInteger(j) == prediction) {
                 nHits++;
-            }
-            if (prediction < 0) {
+            }else if(prediction == -2){
+                this.fallo++;
+            }else if (prediction < 0) {
                 this.nUncover++;
                 this.nUncoverClas[DS.getOutputAsInteger(j)]++;
             }
         }
+        //System.out.println("Clase por defecto: " + this.defaultRule);
 
         this.fitness = (100.0 * nHits) / (1.0 * DS.size());
     }
