@@ -1,0 +1,1 @@
+00:01:20  datasets/magic/magic-5-4tra.dat

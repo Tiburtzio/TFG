@@ -1,0 +1,1 @@
+67  datasets/phoneme/phoneme-5-1tra.dat

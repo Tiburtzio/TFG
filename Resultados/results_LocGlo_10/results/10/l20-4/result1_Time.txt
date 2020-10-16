@@ -1,0 +1,1 @@
+6  datasets/newthyroid/newthyroid-5-2tra.dat

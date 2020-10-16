@@ -1,0 +1,1 @@
+00:00:58  datasets/phoneme/phoneme-5-5tra.dat

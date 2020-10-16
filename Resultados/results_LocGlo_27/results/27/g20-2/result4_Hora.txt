@@ -1,0 +1,1 @@
+00:00:22  datasets/yeast/yeast-5-5tra.dat

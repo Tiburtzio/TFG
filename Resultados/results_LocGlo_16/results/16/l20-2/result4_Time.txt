@@ -1,0 +1,1 @@
+208  datasets/satimage/satimage-5-5tra.dat

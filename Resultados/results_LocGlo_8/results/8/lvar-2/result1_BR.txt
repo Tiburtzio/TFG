@@ -1,0 +1,16 @@
+@Number of rules: 5 Number of Antecedents by rule: 1.0
+
+1: petalLength IS L_0(5): Iris-setosa CF: 1.0
+2: petalLength IS L_2(5): Iris-versicolor CF: 0.8526713437668645
+3: petalWidth IS L_4(5): Iris-virginica CF: 1.0
+4: petalWidth IS L_3(5): Iris-virginica CF: 0.7790055248618785
+5: petalLength IS L_4(5): Iris-virginica CF: 1.0
+
+
+@supp and CF:
+
+1: supp: 0.22768361581920912 AND CF: 1.0
+2: supp: 0.22316384180790957 AND CF: 0.8526713437668645
+3: supp: 0.10694444444444447 AND CF: 1.0
+4: supp: 0.19583333333333328 AND CF: 0.7790055248618785
+5: supp: 0.06793785310734458 AND CF: 1.0

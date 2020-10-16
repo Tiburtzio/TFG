@@ -1,0 +1,1 @@
+26  datasets/pima/pima-5-4tra.dat

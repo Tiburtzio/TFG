@@ -1,0 +1,1 @@
+00:01:25  datasets/phoneme/phoneme-5-4tra.dat

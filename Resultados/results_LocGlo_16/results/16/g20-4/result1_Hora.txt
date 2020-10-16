@@ -1,0 +1,1 @@
+00:00:32  datasets/satimage/satimage-5-2tra.dat

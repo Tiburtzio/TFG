@@ -1,0 +1,1 @@
+00:00:22  datasets/ecoli/ecoli-5-2tra.dat

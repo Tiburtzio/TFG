@@ -1,0 +1,1 @@
+00:06:25  datasets/vehicle/vehicle-5-1tra.dat

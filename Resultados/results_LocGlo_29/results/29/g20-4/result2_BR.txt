@@ -1,0 +1,134 @@
+@Number of rules: 64 Number of Antecedents by rule: 1.84375
+
+1: right-distance IS L_0(5): L CF: 0.8118811881188118
+2: right-weight IS L_0(5): L CF: 0.7526881720430109
+3: left-distance IS L_4(5): L CF: 0.7319587628865979
+4: left-weight IS L_4(5): L CF: 0.7263157894736842
+5: left-weight IS L_2(5): L CF: 0.5
+6: left-weight IS L_2(5) AND right-distance IS L_1(5): L CF: 0.6363636363636365
+7: left-weight IS L_2(5) AND right-weight IS L_1(5): L CF: 0.6521739130434783
+8: left-weight IS L_2(5) AND right-weight IS L_0(5): L CF: 0.8500000000000001
+9: left-weight IS L_2(5) AND left-distance IS L_2(5): L CF: 0.5217391304347826
+10: left-weight IS L_3(5) AND right-distance IS L_2(5): L CF: 0.6521739130434783
+11: left-weight IS L_3(5) AND right-distance IS L_1(5): L CF: 0.7894736842105263
+12: left-weight IS L_3(5) AND right-weight IS L_1(5): L CF: 0.7142857142857142
+13: left-weight IS L_3(5) AND right-weight IS L_0(5): L CF: 0.8947368421052633
+14: left-weight IS L_3(5) AND left-distance IS L_4(5): L CF: 0.8636363636363636
+15: left-weight IS L_3(5) AND left-distance IS L_3(5): L CF: 0.8
+16: left-weight IS L_3(5) AND left-distance IS L_2(5): L CF: 0.6842105263157895
+17: left-weight IS L_4(5) AND right-distance IS L_1(5): L CF: 0.875
+18: left-weight IS L_4(5) AND right-weight IS L_2(5): L CF: 0.75
+19: left-weight IS L_4(5) AND right-weight IS L_1(5): L CF: 0.8095238095238095
+20: left-weight IS L_4(5) AND right-weight IS L_0(5): L CF: 1.0
+21: left-weight IS L_4(5) AND left-distance IS L_4(5): L CF: 1.0
+22: left-weight IS L_4(5) AND left-distance IS L_2(5): L CF: 0.7499999999999999
+23: left-distance IS L_2(5) AND right-distance IS L_1(5): L CF: 0.6666666666666666
+24: left-distance IS L_2(5) AND right-weight IS L_1(5): L CF: 0.6521739130434783
+25: left-distance IS L_3(5) AND right-distance IS L_2(5): L CF: 0.6666666666666666
+26: left-distance IS L_3(5) AND right-distance IS L_1(5): L CF: 0.75
+27: left-distance IS L_3(5) AND right-weight IS L_2(5): L CF: 0.6363636363636365
+28: left-distance IS L_3(5) AND right-weight IS L_1(5): L CF: 0.8
+29: left-distance IS L_3(5) AND right-weight IS L_0(5): L CF: 0.9047619047619047
+30: left-distance IS L_4(5) AND right-weight IS L_1(5): L CF: 0.8823529411764705
+31: right-weight IS L_0(5) AND right-distance IS L_2(5): L CF: 0.7727272727272728
+32: right-distance IS L_4(5): R CF: 0.7422680412371133
+33: right-distance IS L_2(5): R CF: 0.48076923076923084
+34: left-distance IS L_0(5): R CF: 0.7745098039215687
+35: left-weight IS L_2(5): R CF: 0.4150943396226415
+36: left-weight IS L_0(5): R CF: 0.7857142857142857
+37: left-weight IS L_0(5) AND right-distance IS L_2(5): R CF: 0.8947368421052633
+38: left-weight IS L_0(5) AND right-weight IS L_4(5): R CF: 1.0
+39: left-weight IS L_0(5) AND right-weight IS L_3(5): R CF: 0.9047619047619047
+40: left-weight IS L_0(5) AND right-weight IS L_2(5): R CF: 0.9047619047619047
+41: left-weight IS L_1(5) AND right-distance IS L_3(5): R CF: 0.7727272727272728
+42: left-weight IS L_1(5) AND right-weight IS L_2(5): R CF: 0.7222222222222222
+43: left-weight IS L_2(5) AND right-distance IS L_4(5): R CF: 0.6818181818181819
+44: left-weight IS L_2(5) AND right-weight IS L_4(5): R CF: 0.6956521739130435
+45: left-weight IS L_3(5) AND right-weight IS L_4(5): R CF: 0.5714285714285714
+46: left-distance IS L_0(5) AND right-distance IS L_3(5): R CF: 0.9473684210526315
+47: left-distance IS L_0(5) AND right-distance IS L_2(5): R CF: 0.8636363636363636
+48: left-distance IS L_0(5) AND right-distance IS L_1(5): R CF: 0.7142857142857142
+49: left-distance IS L_0(5) AND right-weight IS L_4(5): R CF: 0.9411764705882353
+50: left-distance IS L_1(5) AND right-distance IS L_4(5): R CF: 0.8500000000000001
+51: left-distance IS L_1(5) AND right-distance IS L_3(5): R CF: 0.736842105263158
+52: left-distance IS L_1(5) AND right-distance IS L_2(5): R CF: 0.6499999999999999
+53: left-distance IS L_1(5) AND right-weight IS L_3(5): R CF: 0.7222222222222222
+54: left-distance IS L_2(5) AND right-distance IS L_4(5): R CF: 0.7777777777777779
+55: left-distance IS L_2(5) AND right-distance IS L_3(5): R CF: 0.6818181818181819
+56: left-distance IS L_2(5) AND right-weight IS L_4(5): R CF: 0.7391304347826088
+57: left-distance IS L_3(5) AND right-weight IS L_4(5): R CF: 0.6315789473684211
+58: right-weight IS L_1(5) AND right-distance IS L_4(5): R CF: 0.6666666666666666
+59: right-weight IS L_2(5) AND right-distance IS L_3(5): R CF: 0.7272727272727273
+60: right-weight IS L_3(5) AND right-distance IS L_4(5): R CF: 0.8333333333333334
+61: right-weight IS L_3(5) AND right-distance IS L_3(5): R CF: 0.8500000000000001
+62: right-weight IS L_3(5) AND right-distance IS L_2(5): R CF: 0.6818181818181819
+63: right-weight IS L_4(5) AND right-distance IS L_4(5): R CF: 1.0
+64: right-weight IS L_4(5) AND right-distance IS L_3(5): R CF: 0.8500000000000001
+
+
+@supp and CF:
+
+1: supp: 0.164 AND CF: 0.8118811881188118
+2: supp: 0.14 AND CF: 0.7526881720430109
+3: supp: 0.142 AND CF: 0.7319587628865979
+4: supp: 0.138 AND CF: 0.7263157894736842
+5: supp: 0.106 AND CF: 0.5
+6: supp: 0.028 AND CF: 0.6363636363636365
+7: supp: 0.03 AND CF: 0.6521739130434783
+8: supp: 0.034 AND CF: 0.8500000000000001
+9: supp: 0.024 AND CF: 0.5217391304347826
+10: supp: 0.03 AND CF: 0.6521739130434783
+11: supp: 0.03 AND CF: 0.7894736842105263
+12: supp: 0.03 AND CF: 0.7142857142857142
+13: supp: 0.034 AND CF: 0.8947368421052633
+14: supp: 0.038 AND CF: 0.8636363636363636
+15: supp: 0.032 AND CF: 0.8
+16: supp: 0.026 AND CF: 0.6842105263157895
+17: supp: 0.028 AND CF: 0.875
+18: supp: 0.03 AND CF: 0.75
+19: supp: 0.034 AND CF: 0.8095238095238095
+20: supp: 0.032 AND CF: 1.0
+21: supp: 0.04 AND CF: 1.0
+22: supp: 0.036 AND CF: 0.7499999999999999
+23: supp: 0.028 AND CF: 0.6666666666666666
+24: supp: 0.03 AND CF: 0.6521739130434783
+25: supp: 0.028 AND CF: 0.6666666666666666
+26: supp: 0.03 AND CF: 0.75
+27: supp: 0.028 AND CF: 0.6363636363636365
+28: supp: 0.032 AND CF: 0.8
+29: supp: 0.038 AND CF: 0.9047619047619047
+30: supp: 0.03 AND CF: 0.8823529411764705
+31: supp: 0.034 AND CF: 0.7727272727272728
+32: supp: 0.144 AND CF: 0.7422680412371133
+33: supp: 0.1 AND CF: 0.48076923076923084
+34: supp: 0.158 AND CF: 0.7745098039215687
+35: supp: 0.088 AND CF: 0.4150943396226415
+36: supp: 0.154 AND CF: 0.7857142857142857
+37: supp: 0.034 AND CF: 0.8947368421052633
+38: supp: 0.036 AND CF: 1.0
+39: supp: 0.038 AND CF: 0.9047619047619047
+40: supp: 0.038 AND CF: 0.9047619047619047
+41: supp: 0.034 AND CF: 0.7727272727272728
+42: supp: 0.026 AND CF: 0.7222222222222222
+43: supp: 0.03 AND CF: 0.6818181818181819
+44: supp: 0.032 AND CF: 0.6956521739130435
+45: supp: 0.024 AND CF: 0.5714285714285714
+46: supp: 0.036 AND CF: 0.9473684210526315
+47: supp: 0.038 AND CF: 0.8636363636363636
+48: supp: 0.03 AND CF: 0.7142857142857142
+49: supp: 0.032 AND CF: 0.9411764705882353
+50: supp: 0.034 AND CF: 0.8500000000000001
+51: supp: 0.028 AND CF: 0.736842105263158
+52: supp: 0.026 AND CF: 0.6499999999999999
+53: supp: 0.026 AND CF: 0.7222222222222222
+54: supp: 0.028 AND CF: 0.7777777777777779
+55: supp: 0.03 AND CF: 0.6818181818181819
+56: supp: 0.034 AND CF: 0.7391304347826088
+57: supp: 0.024 AND CF: 0.6315789473684211
+58: supp: 0.028 AND CF: 0.6666666666666666
+59: supp: 0.032 AND CF: 0.7272727272727273
+60: supp: 0.03 AND CF: 0.8333333333333334
+61: supp: 0.034 AND CF: 0.8500000000000001
+62: supp: 0.03 AND CF: 0.6818181818181819
+63: supp: 0.04 AND CF: 1.0
+64: supp: 0.034 AND CF: 0.8500000000000001
